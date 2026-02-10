@@ -26,7 +26,7 @@ jobs:
       pip install -r requirements.text
 
   -name: streamlit import checkout
-    run: |
+  run: |
      cd frontend
      python -c "import streamlit"
      python -c "import streamlit_app"
