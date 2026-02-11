@@ -8,7 +8,7 @@ import os
 app = FastAPI(title="Linear Regression API")
 
 # import os
-MODEL_PATH = Path(os.getenv("MODEL_PATH","models/model.pk1"))
+MODEL_PATH = Path(os.getenv("MODEL_PATH","models/model.pkl"))
 
 try:
     with open(MODEL_PATH, "rb") as f:
