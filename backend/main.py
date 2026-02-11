@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from pathlib import Path
 import pickle
 import numpy as np
+import os
 
 app = FastAPI(title="Linear Regression API")
 
