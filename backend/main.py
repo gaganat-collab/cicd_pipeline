@@ -28,6 +28,6 @@ def health_check():
 @app.post("/predict")
 def predict(data: InputData):
     x = np.array([[data.area,data.bedrooms]])
-    prediction = model.predict(X)[0]
+    prediction = model.predict(x)[0]
     return {"predicted_price": float(prediction)}
         
