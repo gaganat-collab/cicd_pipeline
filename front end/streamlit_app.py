@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # FastAPI endpoint
-API_URL = "https:/"
+API_URL = "https://cicd-pipeline-g23r.onrender.com/predict"
 
 st.set_page_config(
     page_title="House Price Prediction",
@@ -24,7 +24,7 @@ if st.button("Predict Price"):
     }
     try:
         response = requests.post(API_URL, json=payload)
-        
+
 
 
         if response.status_code == 200:
