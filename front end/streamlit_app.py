@@ -30,7 +30,7 @@ if st.button("Predict Price"):
         if response.status_code == 200:
             result = response.json()
             price = result["predicted_price"]
-            st.success(f" Estimated Price: Rs.  {price:, .2f}")
+            st.success(f" Estimated Price: Rs.  {price:,.2f}")
         else:
             st.error(" Prediction failed. Check API.")
 
