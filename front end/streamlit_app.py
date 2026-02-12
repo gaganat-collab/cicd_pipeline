@@ -24,6 +24,7 @@ if st.button("Predict Price"):
     }
     try:
         response = requests.post(API_URL, json=payload)
+        
 
 
         if response.status_code == 200:
