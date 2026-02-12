@@ -23,7 +23,7 @@ if st.button("Predict Price"):
         "bedrooms": bedrooms
     }
     try:
-        response = request.post(API_URL, json=payload)
+        response = requests.post(API_URL, json=payload)
 
 
         if response.status_code == 200:
